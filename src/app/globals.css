@@ -69,14 +69,32 @@
 
 .hero-panel {
   display: grid;
+  position: relative;
   grid-template-columns: minmax(0, 1fr);
   gap: 1.2rem;
   padding: 2rem;
   border: 1px solid var(--border);
   border-radius: calc(var(--radius) + 0.5rem);
-  background: linear-gradient(145deg, var(--card), rgba(255,255,255,0.02));
+  background: var(--card);
   box-shadow: 0 24px 60px rgba(0,0,0,0.45);
   backdrop-filter: blur(14px);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.hero-panel::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background:
+    linear-gradient(100deg, rgba(10, 10, 10, 0.94) 0%, rgba(10, 10, 10, 0.86) 46%, rgba(10, 10, 10, 0.64) 100%),
+    url("/hero-food-backdrop.png") center / cover;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 1;
 }
 
 :global(.dark) .hero-panel {
