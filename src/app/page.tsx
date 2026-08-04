@@ -85,21 +85,6 @@ export default function Home() {
           </div>
         </div>
 
-        <aside className="hero-card" aria-label="Today's signature dish">
-          <div className="hero-card__top">
-            <span className="pill pill-soft">Open till midnight</span>
-          </div>
-          <h2>Maple-glazed brunch plate</h2>
-          <p>
-            Tender egg, roasted greens, and house-baked toast served with citrus butter and
-            a glossy finish.
-          </p>
-          <ul>
-            <li>Chef-selected seasonal produce</li>
-            <li>Hand-finished sauces and garnish</li>
-            <li>Elegant plating with a warm, relaxed energy</li>
-          </ul>
-        </aside>
       </section>
 
       <section id="menu" className="section">
