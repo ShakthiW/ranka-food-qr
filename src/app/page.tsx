@@ -34,6 +34,10 @@ const menuItemImages: Record<number, string> = {
   7: "/menu-items/Grilled Chicken Salad with cheese Sandwich.png",
   8: "/menu-items/Club Sandwich stacked with layers of flavor.png",
   9: "/menu-items/Devilled Chicken Sausage and Cheese Melt.png",
+  10: "/menu-items/Mexican Chicken & Cheese Burger.webp",
+  11: "/menu-items/Chicken Blockbuster.webp",
+  12: "/menu-items/Fried Fish Fillet With Cheese.webp",
+  13: "/menu-items/Golden Batter Fried Prawns & Cheese Burger.webp",
 };
 
 export default function Home() {
