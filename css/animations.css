@@ -1,0 +1,88 @@
+/* Smooth animation helpers */
+:root {
+  --reveal-duration: 0.55s;
+  --reveal-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.reveal-fade-up,
+.reveal-fade-left,
+.reveal-fade-right,
+.reveal-zoom {
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+.reveal-fade-up.is-visible {
+  animation: fadeUp var(--reveal-duration) var(--reveal-ease) both;
+}
+
+.reveal-fade-left.is-visible {
+  animation: fadeLeft var(--reveal-duration) var(--reveal-ease) both;
+}
+
+.reveal-fade-right.is-visible {
+  animation: fadeRight var(--reveal-duration) var(--reveal-ease) both;
+}
+
+.reveal-zoom.is-visible {
+  animation: zoomIn var(--reveal-duration) var(--reveal-ease) both;
+}
+
+.hero-section {
+  animation: fadeUp 0.55s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

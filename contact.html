@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Ranka Foods</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <link rel="stylesheet" href="/css/animations.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a href="index.html" class="brand">Ranka Foods</a>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="main-nav" id="main-nav" aria-label="Primary navigation">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="menu.html">Menu</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+          <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+            <span class="theme-toggle__icon">☀️</span>
+          </button>
+        </nav>
+      </div>
+      <div class="nav-overlay" hidden></div>
+    </header>
+
+    <main class="container contact-page">
+      <section class="contact-hero">
+        <div class="contact-hero__content">
+          <p class="eyebrow">Contact Us</p>
+          <h1>Visit Ranka Foods</h1>
+          <p>
+            Stop by for breakfast, lunch, dinner, or a relaxed evening with cocktails and sweet treats.
+          </p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="https://wa.me/442055550199" target="_blank" rel="noreferrer">WhatsApp</a>
+            <a class="btn btn-secondary" href="https://www.google.com/maps/dir/?api=1&destination=12%20Market%20Street%2C%20London%20UK" target="_blank" rel="noreferrer">Directions</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-grid">
+        <div class="map-card">
+          <iframe
+            title="Ranka Foods location"
+            src="https://www.google.com/maps?q=12%20Market%20Street%2C%20London%20UK&z=14&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <aside class="info-card contact-card">
+          <div class="info-block">
+            <p class="eyebrow">Address</p>
+            <h3>Restaurant Address</h3>
+            <p>12 Market Street</p>
+            <p>London, SW1A 1AA</p>
+            <p>United Kingdom</p>
+          </div>
+
+          <div class="info-block">
+            <p class="eyebrow">Hours</p>
+            <h3>Opening Hours</h3>
+            <p>Mon – Thu: 8:00 AM – 10:00 PM</p>
+            <p>Fri – Sun: 8:00 AM – 12:00 AM</p>
+          </div>
+
+          <div class="info-block">
+            <p class="eyebrow">Reach Us</p>
+            <h3>Phone & Email</h3>
+            <p>+44 20 5555 0199</p>
+            <p>hello@rankafoods.com</p>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>

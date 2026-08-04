@@ -1,0 +1,1 @@
+// Lightbox interaction placeholder

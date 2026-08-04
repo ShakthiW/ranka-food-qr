@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu | Ranka Foods</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <link rel="stylesheet" href="/css/animations.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a href="index.html" class="brand">Ranka Foods</a>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="main-nav" id="main-nav" aria-label="Primary navigation">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="menu.html">Menu</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+          <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+            <span class="theme-toggle__icon">☀️</span>
+          </button>
+        </nav>
+      </div>
+      <div class="nav-overlay" hidden></div>
+    </header>
+
+    <main class="menu-page">
+      <section class="menu-hero">
+        <div class="container menu-hero__content">
+          <p class="eyebrow">Seasonal Menu</p>
+          <h1>Discover your new favorite.</h1>
+          <p>Crafted comfort food, signature beverages and elegant brunch classics.</p>
+        </div>
+      </section>
+
+      <section class="menu-content">
+        <div class="container menu-layout">
+          <aside class="menu-sidebar" aria-label="Category navigation">
+            <div class="sidebar-card">
+              <h2>Categories</h2>
+              <div id="desktop-category-filters"></div>
+            </div>
+          </aside>
+
+          <div class="menu-main">
+            <div class="menu-toolbar">
+              <label class="search-shell" for="menu-search">
+                <span>🔎</span>
+                <input id="menu-search" type="search" placeholder="Search dishes or drinks" />
+              </label>
+              <div class="mobile-category-strip" id="mobile-category-filters"></div>
+            </div>
+            <div id="menu-sections"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/data/menuData.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/menu.js"></script>
+  </body>
+</html>
