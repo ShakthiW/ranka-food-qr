@@ -602,6 +602,10 @@
   place-items: center;
 }
 
+.menu-card__photo {
+  object-fit: cover;
+}
+
 .menu-card__placeholder,
 .feature-card__placeholder {
   display: inline-flex;

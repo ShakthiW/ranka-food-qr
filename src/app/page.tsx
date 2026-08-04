@@ -24,6 +24,15 @@ const categoryImages: Record<string, string> = {
   "a-la-carte": "/category-images/a-la-carte.png",
 };
 
+const menuItemImages: Record<number, string> = {
+  1: "/menu-items/tandoori-chicken-cheese-melt.png",
+  2: "/menu-items/grilled-vegetable-cheese.png",
+  3: "/menu-items/grilled-chicken-bacon-cheese.png",
+  4: "/menu-items/brown-deker-cheese-tomato.png",
+  5: "/menu-items/grilled-tuna-cheese-melt.png",
+  6: "/menu-items/egg-cheese-grilled.png",
+};
+
 export default function Home() {
   return (
     <main className="home-shell">
@@ -91,8 +100,18 @@ export default function Home() {
               <div className="menu-list">
                 {category.items.map((item) => (
                   <article key={item.id} id={makeAnchorId(item.name)} className="menu-card">
-                    <div className="menu-card__image" aria-hidden="true">
-                      <span className="menu-card__placeholder">Image placeholder</span>
+                    <div className="menu-card__image">
+                      {menuItemImages[item.id] ? (
+                        <Image
+                          className="menu-card__photo"
+                          src={menuItemImages[item.id]}
+                          alt={item.name}
+                          fill
+                          sizes="(max-width: 800px) 100vw, 160px"
+                        />
+                      ) : (
+                        <span className="menu-card__placeholder" aria-hidden="true">Image placeholder</span>
+                      )}
                     </div>
                     <div className="menu-card__body">
                       <div className="menu-card__row">
