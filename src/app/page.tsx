@@ -11,6 +11,19 @@ const storyPoints = [
   "Warm service in a quietly luxurious room",
 ];
 
+const categoryImages: Record<string, string> = {
+  sandwiches: "/category-images/sandwiches.png",
+  burgers: "/category-images/burgers.png",
+  submarine: "/category-images/submarine.png",
+  wraps: "/category-images/wraps.png",
+  croissants: "/category-images/croissants.png",
+  waffles: "/category-images/waffles.png",
+  drinks: "/category-images/drinks.png",
+  "special-dishes": "/category-images/special-dishes.png",
+  breakfast: "/category-images/breakfast.png",
+  "a-la-carte": "/category-images/a-la-carte.png",
+};
+
 export default function Home() {
   return (
     <main className="home-shell">
@@ -52,6 +65,11 @@ export default function Home() {
         <div className="card-grid">
           {menuData.categories.map((category) => (
             <Link key={category.id} href={`#category-${category.id}`} className="category-card">
+              <span
+                className="category-card__image"
+                style={{ backgroundImage: `url(${categoryImages[category.id]})` }}
+                aria-hidden="true"
+              />
               <span className="category-card__count">{category.items.length} items</span>
               <h3>{category.name}</h3>
               <p>{category.description}</p>
