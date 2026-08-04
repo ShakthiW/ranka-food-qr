@@ -35,9 +35,6 @@ export default function Home() {
             <Link className="btn btn-primary" href="#menu">
               Explore the menu
             </Link>
-            <Link className="btn btn-secondary" href="#visit">
-              Book a table
-            </Link>
           </div>
         </div>
 
@@ -139,34 +136,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="visit" className="section contact-panel">
-        <div className="section-heading">
-          <p className="eyebrow">Reserve your moment</p>
-          <h2>Come in for a refined meal, a quick brunch, or a late-night treat.</h2>
-        </div>
-        <div className="contact-grid">
-          <div className="contact-card">
-            <h3>Private dining & walk-ins welcome</h3>
-            <p>
-              Whether you are planning a small celebration or stopping in for a casual bite,
-              the table is ready for you.
-            </p>
-          </div>
-          <div className="contact-card contact-card--accent">
-            <h3>Book your table</h3>
-            <p>Call ahead for preferred seating or visit us for an effortless drop-in.</p>
-            <Link className="btn btn-primary" href="mailto:rankafood@gmail.com">
-              rankafood@gmail.com
-            </Link>
-          </div>
-        </div>
-      </section>
-
       <footer className="footer">
         <p>© 2026 Ranka Foods. Crafted for modern comfort.</p>
         <div className="footer-links">
           <a href="#menu">Menu</a>
-          <a href="#visit">Visit</a>
         </div>
       </footer>
     </main>
