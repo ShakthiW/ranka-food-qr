@@ -522,8 +522,8 @@
   height: 11px;
   margin: 0 0 0.7rem;
   background:
-    linear-gradient(90deg, transparent, rgba(239, 58, 58, 0.72) 18%, rgba(239, 58, 58, 0.72) 46%, transparent 46%, transparent 54%, rgba(239, 58, 58, 0.72) 54%, rgba(239, 58, 58, 0.72) 82%, transparent),
-    radial-gradient(circle, #ef3a3a 0 2px, transparent 2.6px);
+    linear-gradient(90deg, transparent, rgba(196, 154, 104, 0.42) 18%, rgba(196, 154, 104, 0.42) 46%, transparent 46%, transparent 54%, rgba(196, 154, 104, 0.42) 54%, rgba(196, 154, 104, 0.42) 82%, transparent),
+    radial-gradient(circle, rgba(214, 177, 127, 0.7) 0 2px, transparent 2.6px);
   background-position: center;
   background-repeat: no-repeat;
 }
