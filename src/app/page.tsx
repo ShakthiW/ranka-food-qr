@@ -134,7 +134,7 @@ export default function Home() {
                 No. 697, Colombo Road, Katunayaka, Sri Lanka, 11450
               </a>
             </p>
-            <p>hello@rankafoods.com • +44 20 5555 0199</p>
+            <p>rankafood@gmail.com • 0114 377 553</p>
           </div>
         </div>
       </section>
@@ -155,8 +155,8 @@ export default function Home() {
           <div className="contact-card contact-card--accent">
             <h3>Book your table</h3>
             <p>Call ahead for preferred seating or visit us for an effortless drop-in.</p>
-            <Link className="btn btn-primary" href="mailto:hello@rankafoods.com">
-              hello@rankafoods.com
+            <Link className="btn btn-primary" href="mailto:rankafood@gmail.com">
+              rankafood@gmail.com
             </Link>
           </div>
         </div>
