@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { menuData } from "@/lib/menuData";
 
@@ -25,6 +26,15 @@ const storyPoints = [
 export default function Home() {
   return (
     <main className="home-shell">
+      <div className="site-brand">
+        <Image
+          src="/ranka-logo-transparent.png"
+          alt="Ranka Foods"
+          width={720}
+          height={720}
+          priority
+        />
+      </div>
       <section className="hero-panel">
         <div className="hero-copy">
           <p className="eyebrow">Ranka Foods • Premium dining</p>
@@ -77,7 +87,6 @@ export default function Home() {
 
         <aside className="hero-card" aria-label="Today's signature dish">
           <div className="hero-card__top">
-            <span className="pill">Signature today</span>
             <span className="pill pill-soft">Open till midnight</span>
           </div>
           <h2>Maple-glazed brunch plate</h2>

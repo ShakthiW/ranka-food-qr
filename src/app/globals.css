@@ -89,6 +89,18 @@
   letter-spacing: -0.03em;
 }
 
+.site-brand {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+}
+
+.site-brand img {
+  display: block;
+  width: clamp(10.5rem, 29vw, 15rem);
+  height: auto;
+}
+
 .hero-copy p {
   max-width: 620px;
   color: var(--muted-foreground);
@@ -588,6 +600,10 @@
 
   .hero-copy h1 {
     font-size: clamp(2rem, 8vw, 2.6rem);
+  }
+
+  .site-brand {
+    margin-bottom: 0.85rem;
   }
 
   .hero-actions {
