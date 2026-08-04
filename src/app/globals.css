@@ -578,8 +578,24 @@
     padding-top: 1rem;
   }
 
+  .section {
+    padding-top: 2.4rem;
+  }
+
   .hero-panel {
     padding: 1rem;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2rem, 8vw, 2.6rem);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
   }
 
   .hero-stats,
@@ -587,8 +603,31 @@
     grid-template-columns: 1fr;
   }
 
+  .stat-card {
+    min-width: 0;
+    padding: 1rem;
+    height: auto;
+  }
+
+  .feature-card__meta,
+  .menu-category__heading,
+  .menu-card__row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-card__price {
+    min-width: 0;
+    text-align: left;
+  }
+
   .footer {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 0.75rem 1rem;
   }
 }
