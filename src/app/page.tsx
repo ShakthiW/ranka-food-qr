@@ -125,7 +125,15 @@ export default function Home() {
           </div>
           <div className="info-card info-card--accent">
             <h3>Visit us</h3>
-            <p>12 Market Street, London</p>
+            <p>
+              <a
+                href="https://www.bing.com/maps/default.aspx?v=2&pc=FACEBK&mid=8100&where1=No.%20697%2C%20Colombo%20Road%2C%20Katunayaka%2C%20Sri%20Lanka%2C%2011450&FORM=FBKPL1&mkt=en-GB&fbclid=IwcGRvZgFleHRuA2FlbQIxMABzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEecCIyAVCUhRtv5XkdqS6TEPYwqKgWeF1-6mxjMQh8LCL-hJU-Jsx3tMraU5w_aem_8ubpVrlMxEs1u3ukNPjdfA"
+                target="_blank"
+                rel="noreferrer"
+              >
+                No. 697, Colombo Road, Katunayaka, Sri Lanka, 11450
+              </a>
+            </p>
             <p>hello@rankafoods.com • +44 20 5555 0199</p>
           </div>
         </div>
