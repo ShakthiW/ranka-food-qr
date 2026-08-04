@@ -55,7 +55,6 @@ export default function Home() {
 
       <section id="menu" className="section">
         <div className="section-heading">
-          <p className="eyebrow">Browse the menu</p>
           <h2>Choose a category to explore its dishes.</h2>
           <p>
             Select a category to jump directly to its menu, including every item and its price.
