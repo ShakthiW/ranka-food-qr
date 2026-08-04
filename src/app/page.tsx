@@ -68,8 +68,9 @@ export default function Home() {
             <section key={category.id} id={`category-${category.id}`} className="menu-category">
               <div className="menu-category__heading">
                 <div>
-                  <p className="eyebrow">{category.name}</p>
-                  <h3>{category.description}</h3>
+                  <p className="category-kicker">Menu category</p>
+                  <h3>{category.name}</h3>
+                  <p className="category-description">{category.description}</p>
                 </div>
               </div>
 
