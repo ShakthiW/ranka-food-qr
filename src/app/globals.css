@@ -650,6 +650,10 @@
   align-items: start;
 }
 
+.section-split--info-only {
+  grid-template-columns: 1fr;
+}
+
 .story-panel,
 .info-card,
 .contact-card {

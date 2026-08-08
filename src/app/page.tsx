@@ -5,12 +5,6 @@ import { menuData } from "@/lib/menuData";
 const makeAnchorId = (text: string) =>
   `item-${text.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "")}`;
 
-const storyPoints = [
-  "Fresh ingredients sourced daily",
-  "House-made sauces and pastry layers",
-  "Warm service in a quietly luxurious room",
-];
-
 const categoryImages: Record<string, string> = {
   bread: "/category-images/Bread.webp",
   buns: "/category-images/Buns.webp",
@@ -122,26 +116,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section section-split">
-        <div className="story-panel">
-          <p className="eyebrow">Why guests return</p>
-          <h2>Thoughtful service, rich flavor, and beautiful details.</h2>
-          <p>
-            Ranka Foods was built for slow lunches, late-night cravings, and celebratory
-            dinners that deserve the same care as the food itself.
-          </p>
-          <ul className="check-list">
-            {storyPoints.map((point) => (
-              <li key={point}>{point}</li>
-            ))}
-          </ul>
-        </div>
-
+      <section className="section section-split section-split--info-only">
         <div className="info-panel">
           <div className="info-card">
             <h3>Open daily</h3>
-            <p>Monday–Thursday • 8:00 AM – 10:00 PM</p>
-            <p>Friday–Sunday • 8:00 AM – 12:00 AM</p>
+            <p>Monday–Sunday • 6:30 AM – 10:30 PM</p>
           </div>
           <div className="info-card info-card--accent">
             <h3>Visit us</h3>
