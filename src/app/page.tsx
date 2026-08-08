@@ -12,6 +12,9 @@ const storyPoints = [
 ];
 
 const categoryImages: Record<string, string> = {
+  bread: "/category-images/Bread.png",
+  buns: "/category-images/Buns.png",
+  pastry: "/category-images/Pastry.png",
   sandwiches: "/category-images/sandwiches.png",
   burgers: "/category-images/burgers.png",
   submarine: "/category-images/submarine.png",
