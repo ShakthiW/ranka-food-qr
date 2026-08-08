@@ -29,6 +29,21 @@ const categoryImages: Record<string, string> = {
   "a-la-carte": "/category-images/a-la-carte.webp",
 };
 
+const drinkCategoryIds = new Set([
+  "hot-drinks",
+  "drinks",
+  "elephant-house",
+  "lion",
+  "milkshakes-juice-mojito",
+]);
+
+const orderedCategories = [...menuData.categories].sort((first, second) => {
+  const order = (categoryId: string) =>
+    categoryId === "other" ? 2 : drinkCategoryIds.has(categoryId) ? 1 : 0;
+
+  return order(first.id) - order(second.id);
+});
+
 export default function Home() {
   return (
     <main className="home-shell">
@@ -67,7 +82,7 @@ export default function Home() {
         </div>
 
         <div className="card-grid">
-          {menuData.categories.map((category) => (
+          {orderedCategories.map((category) => (
             <Link key={category.id} href={`#category-${category.id}`} className="category-card">
               {categoryImages[category.id] && (
                 <span
@@ -85,7 +100,7 @@ export default function Home() {
         </div>
 
         <div className="menu-board">
-          {menuData.categories.map((category) => (
+          {orderedCategories.map((category) => (
             <section key={category.id} id={`category-${category.id}`} className="menu-category">
               <div className="menu-category__heading">
                 <div>
