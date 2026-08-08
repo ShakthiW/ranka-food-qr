@@ -94,7 +94,7 @@ export default function Home() {
               <span className="category-card__count">{category.items.length} items</span>
               <h3>{category.name}</h3>
               <p>{category.description}</p>
-              <span className="category-card__link">View dishes <span aria-hidden="true">↓</span></span>
+              <span className="category-card__link">Click To View</span>
             </Link>
           ))}
         </div>
@@ -159,6 +159,10 @@ export default function Home() {
           <a href="#menu">Menu</a>
         </div>
       </footer>
+
+      <Link className="back-to-categories" href="#menu">
+        Back To Categories ↑
+      </Link>
     </main>
   );
 }
