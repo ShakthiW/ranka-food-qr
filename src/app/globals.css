@@ -718,9 +718,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 3.25rem;
-  min-height: 9.5rem;
-  padding: 0.9rem 0.55rem;
+  width: 2.7rem;
+  min-height: 7.25rem;
+  padding: 0.75rem 0.42rem;
   border: 1px solid rgba(0, 200, 83, 0.55);
   border-right: 0;
   border-radius: 5rem 0 0 5rem;
@@ -728,7 +728,7 @@
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.34);
   color: var(--primary);
   cursor: pointer;
-  font-size: 0.72rem;
+  font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   list-style: none;

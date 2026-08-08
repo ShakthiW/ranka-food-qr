@@ -46,7 +46,7 @@ const orderedCategories = [...menuData.categories].sort((first, second) => {
 
 export default function Home() {
   return (
-    <main className="home-shell">
+    <main id="top" className="home-shell">
       <div className="site-brand">
         <Image
           src="/ranka-logo-transparent.png"
@@ -161,7 +161,7 @@ export default function Home() {
       </footer>
 
       <Link className="category-navigator" href="#menu">
-        Categories
+        Menu
       </Link>
     </main>
   );
