@@ -24,22 +24,6 @@ const categoryImages: Record<string, string> = {
   "a-la-carte": "/category-images/a-la-carte.png",
 };
 
-const menuItemImages: Record<number, string> = {
-  1: "/menu-items/tandoori-chicken-cheese-melt.png",
-  2: "/menu-items/grilled-vegetable-cheese.png",
-  3: "/menu-items/grilled-chicken-bacon-cheese.png",
-  4: "/menu-items/brown-deker-cheese-tomato.png",
-  5: "/menu-items/grilled-tuna-cheese-melt.png",
-  6: "/menu-items/egg-cheese-grilled.png",
-  7: "/menu-items/Grilled Chicken Salad with cheese Sandwich.png",
-  8: "/menu-items/Club Sandwich stacked with layers of flavor.png",
-  9: "/menu-items/Devilled Chicken Sausage and Cheese Melt.png",
-  10: "/menu-items/Mexican Chicken & Cheese Burger.webp",
-  11: "/menu-items/Chicken Blockbuster.webp",
-  12: "/menu-items/Fried Fish Fillet With Cheese.webp",
-  13: "/menu-items/Golden Batter Fried Prawns & Cheese Burger.webp",
-};
-
 export default function Home() {
   return (
     <main className="home-shell">
@@ -80,11 +64,13 @@ export default function Home() {
         <div className="card-grid">
           {menuData.categories.map((category) => (
             <Link key={category.id} href={`#category-${category.id}`} className="category-card">
-              <span
-                className="category-card__image"
-                style={{ backgroundImage: `url(${categoryImages[category.id]})` }}
-                aria-hidden="true"
-              />
+              {categoryImages[category.id] && (
+                <span
+                  className="category-card__image"
+                  style={{ backgroundImage: `url(${categoryImages[category.id]})` }}
+                  aria-hidden="true"
+                />
+              )}
               <span className="category-card__count">{category.items.length} items</span>
               <h3>{category.name}</h3>
               <p>{category.description}</p>
@@ -107,31 +93,14 @@ export default function Home() {
               <div className="menu-list">
                 {category.items.map((item) => (
                   <article key={item.id} id={makeAnchorId(item.name)} className="menu-card">
-                    <div className="menu-card__image">
-                      {menuItemImages[item.id] ? (
-                        <Image
-                          className="menu-card__photo"
-                          src={menuItemImages[item.id]}
-                          alt={item.name}
-                          fill
-                          sizes="(max-width: 800px) 100vw, 160px"
-                        />
-                      ) : (
-                        <span className="menu-card__placeholder" aria-hidden="true">Image placeholder</span>
-                      )}
-                    </div>
                     <div className="menu-card__body">
                       <div className="menu-card__row">
                         <div>
                           <h4>{item.name}</h4>
-                          <p>{item.description}</p>
                         </div>
-                        <span className="menu-card__price">Rs. {item.price}</span>
-                      </div>
-                      <div className="menu-card__badges">
-                        {item.bestseller && <span className="menu-card__badge">Bestseller</span>}
-                        {item.spicy && <span className="menu-card__badge">Spicy</span>}
-                        {item.vegetarian && <span className="menu-card__badge">Vegetarian</span>}
+                        <span className="menu-card__price">
+                          {item.price === "Price on request" ? item.price : `Rs. ${item.price}`}
+                        </span>
                       </div>
                     </div>
                   </article>
