@@ -12,23 +12,27 @@ const storyPoints = [
 ];
 
 const categoryImages: Record<string, string> = {
-  bread: "/category-images/Bread.png",
-  buns: "/category-images/Buns.png",
-  pastry: "/category-images/Pastry.png",
-  shorteats: "/category-images/Rolls.png",
-  "order-cake": "/category-images/Order Cake.png",
-  "hot-drinks": "/category-images/Hot Drinks.png",
-  "cakes-desserts": "/category-images/Cakes& Desserts.png",
-  sandwiches: "/category-images/sandwiches.png",
-  burgers: "/category-images/burgers.png",
-  submarine: "/category-images/submarine.png",
-  wraps: "/category-images/wraps.png",
-  croissants: "/category-images/croissants.png",
-  waffles: "/category-images/waffles.png",
-  drinks: "/category-images/drinks.png",
-  "special-dishes": "/category-images/special-dishes.png",
-  breakfast: "/category-images/breakfast.png",
-  "a-la-carte": "/category-images/a-la-carte.png",
+  bread: "/category-images/Bread.webp",
+  buns: "/category-images/Buns.webp",
+  pastry: "/category-images/Pastry.webp",
+  shorteats: "/category-images/Rolls.webp",
+  "order-cake": "/category-images/Order Cake.webp",
+  "hot-drinks": "/category-images/Hot Drinks.webp",
+  "cakes-desserts": "/category-images/Cakes& Desserts.webp",
+  "milkshakes-juice-mojito": "/category-images/Milkshake.webp",
+  "elephant-house": "/category-images/Elephant House.webp",
+  lion: "/category-images/Lion.webp",
+  other: "/category-images/Other.webp",
+  sandwiches: "/category-images/sandwiches.webp",
+  burgers: "/category-images/burgers.webp",
+  submarine: "/category-images/submarine.webp",
+  wraps: "/category-images/wraps.webp",
+  croissants: "/category-images/croissants.webp",
+  waffles: "/category-images/waffles.webp",
+  drinks: "/category-images/drinks.webp",
+  "special-dishes": "/category-images/special-dishes.webp",
+  breakfast: "/category-images/breakfast.webp",
+  "a-la-carte": "/category-images/a-la-carte.webp",
 };
 
 export default function Home() {
@@ -74,7 +78,7 @@ export default function Home() {
               {categoryImages[category.id] && (
                 <span
                   className="category-card__image"
-                  style={{ backgroundImage: `url(${categoryImages[category.id]})` }}
+                  style={{ backgroundImage: `url("${categoryImages[category.id]}")` }}
                   aria-hidden="true"
                 />
               )}
