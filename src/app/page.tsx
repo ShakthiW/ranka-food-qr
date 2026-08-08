@@ -58,7 +58,7 @@ export default function Home() {
       </div>
       <section className="hero-panel">
         <div className="hero-copy">
-          <p className="eyebrow">Ranka Foods • Premium dining</p>
+          <p className="eyebrow">Ranka Food</p>
           <h1>Fresh Flavours For Every Craving</h1>
           <p>
             Discover an elevated café experience where brunch classics, signature burgers,
