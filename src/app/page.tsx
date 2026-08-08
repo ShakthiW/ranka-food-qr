@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import SideMenuNavigation from "@/components/side-menu-navigation";
 import { menuData } from "@/lib/menuData";
 
 const makeAnchorId = (text: string) =>
@@ -56,7 +57,7 @@ export default function Home() {
           priority
         />
       </div>
-      <section className="hero-panel">
+      <section id="hero" className="hero-panel">
         <div className="hero-copy">
           <p className="eyebrow">Ranka Food</p>
           <h1>Fresh Flavours For Every Craving</h1>
@@ -160,9 +161,7 @@ export default function Home() {
         </div>
       </footer>
 
-      <Link className="category-navigator" href="#menu">
-        Menu
-      </Link>
+      <SideMenuNavigation />
     </main>
   );
 }
