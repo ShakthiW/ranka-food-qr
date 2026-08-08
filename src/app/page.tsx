@@ -160,8 +160,8 @@ export default function Home() {
         </div>
       </footer>
 
-      <Link className="back-to-categories" href="#menu">
-        Back To Categories ↑
+      <Link className="category-navigator" href="#menu">
+        Categories
       </Link>
     </main>
   );
