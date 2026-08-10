@@ -94,7 +94,14 @@ export default function Home() {
               <div className="menu-category__heading">
                 <div>
                   <p className="category-kicker">Menu category</p>
-                  <h3>{category.name}</h3>
+                  <div className="menu-category__title-row">
+                    <h3>{category.name}</h3>
+                    {category.availability && (
+                      <span className="menu-category__availability">
+                        {category.availability}
+                      </span>
+                    )}
+                  </div>
                   <p className="category-description">{category.description}</p>
                 </div>
               </div>

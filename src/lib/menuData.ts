@@ -13,10 +13,17 @@ const makeItems = (items: string): MenuItem[] =>
       return { id: index + 1, name, price };
     });
 
-const category = (id: string, name: string, description: string, items: string) => ({
+const category = (
+  id: string,
+  name: string,
+  description: string,
+  items: string,
+  availability?: string,
+) => ({
   id,
   name,
   description,
+  availability,
   items: makeItems(items),
 });
 
@@ -124,12 +131,12 @@ Fish & Chips|1500
 Chicken & Chips|1500
 Hot Honey Crsipy Chicken Wings (6pcs)|1100
 Chicken Nuggets|900`),
-    category("breakfast", "Breakfast", "Breakfast classics with hearty, comforting flavour. Available from 6:00 a.m. to 10:00 a.m.", `
+    category("breakfast", "Breakfast", "Breakfast classics with hearty, comforting flavour.", `
 Milk Rice With Lunu Miris|300
 Kadala With Egg & Cheese|300
 Hot Cake With Chocolate Sauce|350
 English Breafast|1600
-Roast Bread with Coconut Sambol|150`),
+Roast Bread with Coconut Sambol|150`, "6:00 a.m. – 10:00 a.m."),
     category("a-la-carte", "A la Carte Menu", "Individual dishes for a tailored dining experience.", `
 Loaded Fries|1300
 Cream Of Vegetable Soup|500
