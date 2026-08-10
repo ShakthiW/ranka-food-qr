@@ -134,7 +134,6 @@ Chicken Nuggets|900`),
     category("breakfast", "Breakfast", "Breakfast classics with hearty, comforting flavour.", `
 Milk Rice With Lunu Miris|300
 Kadala With Egg & Cheese|300
-Hot Cake With Chocolate Sauce|350
 English Breafast|1600
 Roast Bread with Coconut Sambol|150`, "6:00 a.m. – 10:00 a.m."),
     category("a-la-carte", "A la Carte Menu", "Individual dishes for a tailored dining experience.", `
