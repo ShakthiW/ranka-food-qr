@@ -158,6 +158,6 @@ Marinara Seafood Pasta|1500
 Spicy Mozza Chicken Pasta|1300
 Spicy Mozza Seafood Pasta|1300
 Creamy Mayo Chicken Pasta|1300
-Creamy Mayo Seafood Pasta|1300`),
+Creamy Mayo Seafood Pasta|1300`, "10:30 a.m. – 10:00 p.m."),
   ],
 };
