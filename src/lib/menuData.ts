@@ -48,21 +48,7 @@ Ice Milo|260
 Water Bottle (500ml)|80
 Water Bottle (1000ml)|120
 Water Bottle (1500ml)|150
-Red Bull|750
-Smak Packet|140
-Smak Bottles|150
-Smak (200ml)|160
-Smak Necta (500ml)|320
-Smak Necta (1000ml)|570
-Milo Milk|130
-Nescaffe Ice Coffee|150
-Richlife Milk Packet|140
-Yogurt Drink|170
-Yogurt|80
-Kothmale Milk|140
-Sunquick Packet|140
-MD Necta|140
-Leon Milk|230`),
+Red Bull|750`),
     category("sandwiches", "Sandwiches", "Layered favourites with rich cheese and savoury fillings.", `
 Tandoori Chicken and Cheese Melt Sandwich|900
 Grilled Vegetable and Cheese Sandwich|700
