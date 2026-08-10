@@ -7,17 +7,8 @@ const makeAnchorId = (text: string) =>
   `item-${text.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "")}`;
 
 const categoryImages: Record<string, string> = {
-  bread: "/category-images/Bread.webp",
-  buns: "/category-images/Buns.webp",
-  pastry: "/category-images/Pastry.webp",
-  shorteats: "/category-images/Rolls.webp",
-  "order-cake": "/category-images/Order Cake.webp",
   "hot-drinks": "/category-images/Hot Drinks.webp",
-  "cakes-desserts": "/category-images/Cakes& Desserts.webp",
   "milkshakes-juice-mojito": "/category-images/Milkshake.webp",
-  "elephant-house": "/category-images/Elephant House.webp",
-  lion: "/category-images/Lion.webp",
-  other: "/category-images/Other.webp",
   sandwiches: "/category-images/sandwiches.webp",
   burgers: "/category-images/burgers.webp",
   submarine: "/category-images/submarine.webp",
@@ -33,14 +24,11 @@ const categoryImages: Record<string, string> = {
 const drinkCategoryIds = new Set([
   "hot-drinks",
   "drinks",
-  "elephant-house",
-  "lion",
   "milkshakes-juice-mojito",
 ]);
 
 const orderedCategories = [...menuData.categories].sort((first, second) => {
-  const order = (categoryId: string) =>
-    categoryId === "other" ? 2 : drinkCategoryIds.has(categoryId) ? 1 : 0;
+  const order = (categoryId: string) => (drinkCategoryIds.has(categoryId) ? 1 : 0);
 
   return order(first.id) - order(second.id);
 });
