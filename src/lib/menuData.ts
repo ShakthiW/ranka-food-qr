@@ -60,7 +60,7 @@ Grilled Chicken Salad with Cheese Sandwich|800
 Club Sandwich Stacked with Layers of Flavor|1200
 Devilled Chicken Sausage and Cheese Melt|900`),
     category("burgers", "Burger", "Premium burgers with indulgent toppings.", `
-Crispy Chicken & Cheese Burger|1200
+Mexican Chicken & Cheese Burger|1200
 Chicken Blockbuster|1300
 Fried Fish Fillet With Cheese|1300
 Golden Batter Fried Prawns & Cheese Burger|1300`),
