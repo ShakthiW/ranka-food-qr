@@ -30,21 +30,21 @@ const category = (
 export const menuData = {
   categories: [
     category("hot-drinks", "Hot Drinks", "Warm drinks made to order.", `
-Plain Tea|80
-Milk Tea|200
-Coffee|200
-Nescaffe Hot|160
-Nestea|160
-Cardamon Tea|160
-Milo Hot|160
-Cappuccino|350
-Americano|320
-Caffelatte|300
-Caffe Mocha|300
-Hot Chocolate|300`),
+Plain Tea|100
+Milk Tea|220
+Coffee|220
+Nescafe Hot|170
+Nestea|170
+Cardamon Tea|170
+Hot Milo|170
+Cappuccino|450
+Americano|350
+Caffelatte|450
+Caffe Mocha|450
+Hot Chocolate|400`),
     category("drinks", "Drinks", "Cold drinks and refreshments.", `
-Ice Coffee|260
-Ice Milo|260
+Ice Coffee|300
+Ice Milo|300
 Water Bottle (500ml)|80
 Water Bottle (1000ml)|120
 Water Bottle (1500ml)|150
